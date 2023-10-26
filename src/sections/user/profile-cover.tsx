@@ -12,6 +12,7 @@ import {bgGradient} from 'src/theme/css'
 import { useBoolean } from "src/hooks";
 import  Portal  from "@mui/material/Portal";
 import Fade from '@mui/material/Fade'
+import { Card, Typography } from "@mui/material";
 
 
 
@@ -74,14 +75,19 @@ export default function ProfileCover({name, avatarUrl, role, coverUrl}: IUserPro
 
       </Stack>
       {hover ? (
-        <Portal>
+        <Portal >
           <Fade in={hover.value}>
             <Box
           sx={{
             width: 1,
             height: 1
           }}>
-            <h1>Hello Pro</h1>
+            <Card sx={{width: 500, height: 100, backgroundColor:'violet',
+            zIndex: 100}} >
+              <Typography>
+                I'm Portal
+              </Typography>
+            </Card>
           </Box>
           </Fade>
           

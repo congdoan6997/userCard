@@ -48,7 +48,7 @@ export default function UserProfileView(){
         <ProfileCover role={user.role} name={user.name} 
         avatarUrl={user.avartarUrl} coverUrl={user.coverUrl} />
         <Tabs sx={{
-          height: '48px',
+          // height: '48px',
           // padding: '0 12px',
           width: 1,
           bottom: 0,
